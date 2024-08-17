@@ -41,6 +41,7 @@ module.exports = {
   "cagoule": "windbreaker",
   "candidature": "candidacy",
   "candy floss": "cotton candy",
+  'caramelise': 'caramelize',
   "car boot sale": "swap meet",
   "car boot": "trunk",
   "car hire": "car rental",

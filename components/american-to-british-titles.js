@@ -1,5 +1,4 @@
 module.exports = {
-  'Mr.': 'Mr',
   'mr.': 'mr',
   'mrs.': 'mrs',
   'ms.': 'ms',
