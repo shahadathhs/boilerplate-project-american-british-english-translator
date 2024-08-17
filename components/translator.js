@@ -37,7 +37,11 @@ class Translator {
         return { error: 'Invalid value for locale field' };
     }
 
-    return translation === phrase ? 'Everything looks good to me!' : { text: phrase, translation };
+    if (translation === phrase) {
+      return 'Everything looks good to me!';
+    }
+
+    return { text: phrase, translation };
   }
 
   // Translate text based on the dictionary
@@ -59,7 +63,7 @@ class Translator {
         });
     });
     return translatedText;
-}
+  }
 
   // Convert time format based on locale
   convertTimeFormat(text, locale) {
@@ -73,7 +77,7 @@ class Translator {
 
   // List all supported translation types
   listSupportedLocales() {
-    return ['american-to-british', 'british-to-american', 'american-to-british-title', 'american-to-british-spelling'];
+    return ['american-to-british', 'british-to-american'];
   }
 }
 
